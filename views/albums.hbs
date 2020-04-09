@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  {{#each items}}
+  <p>{{this.name}}</p>
+  <img
+    src="{{#if this.images.0.url}}{{this.images.0.url}}{{else}}https://i.scdn.co/image/ab67616d0000b273c94603dcb78ec39322cebb5b{{/if}}"
+    alt="" srcset="">
+  <a href="/tracks/{{this.id}}">View Tracks</a>
+  {{/each}}
+</body>
+
+</html>
